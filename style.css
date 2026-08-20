@@ -118,7 +118,7 @@ a:focus-visible {
 }
 
 .hero {
-  padding-block: clamp(5.5rem, 14vw, 10.5rem) clamp(5rem, 11vw, 8rem);
+  padding-block: clamp(5.5rem, 14vw, 10.5rem) clamp(4rem, 8vw, 6.5rem);
 }
 
 .eyebrow {
@@ -194,6 +194,76 @@ h1 {
   color: var(--accent);
 }
 
+.profile {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(17rem, 0.95fr);
+  gap: clamp(3rem, 9vw, 9rem);
+  padding-block: clamp(3rem, 7vw, 5.5rem) clamp(5rem, 11vw, 8rem);
+  border-top: 1px solid var(--line);
+}
+
+.section-index {
+  margin-bottom: 1.25rem;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.section-index span {
+  margin-inline: 0.25rem;
+  color: var(--muted);
+}
+
+.profile-copy h2 {
+  max-width: 13ch;
+  margin-bottom: 1.25rem;
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  font-weight: 540;
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+.profile-copy > p:last-child {
+  max-width: 34rem;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.profile-facts {
+  display: grid;
+  align-content: start;
+  gap: 0;
+  margin: 0;
+}
+
+.profile-fact {
+  padding-block: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.profile-fact:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.profile-fact dt {
+  margin-bottom: 0.45rem;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.profile-fact dd {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -234,6 +304,15 @@ h1 {
     align-items: flex-start;
     flex-direction: column;
     gap: 1.15rem;
+  }
+
+  .profile {
+    grid-template-columns: 1fr;
+    gap: 3.25rem;
+  }
+
+  .profile-copy h2 {
+    max-width: 11ch;
   }
 
   .site-footer {
